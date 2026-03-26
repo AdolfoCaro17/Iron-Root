@@ -100,10 +100,12 @@
       gap: 14px;
     }
 
-    .brand img {
-      height: 64px;
-      width: auto;
-    }
+   .brand img {
+     height: 64px;
+     width: 64px;        /* make it a perfect square */
+     object-fit: cover;  /* keeps it from stretching */
+     border-radius: 50%; /* makes it a circle */
+  }
 
     .brand-copy {
       display: flex;
